@@ -1,0 +1,13 @@
+[package]
+name = "geo-distance-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Rust/C++ interop demo (via cxx): haversine distance and nearest-match lookups"
+
+[dependencies]
+cxx = "1.0"
+geo-bindgen-macro = { path = "../geo-bindgen-macro" }
+
+[build-dependencies]
+cxx-build = "1.0"
